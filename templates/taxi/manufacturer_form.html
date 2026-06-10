@@ -6,7 +6,7 @@
     {% if object %}Update Manufacturer{% else %}Create Manufacturer{% endif %}
   </h1>
   {% crispy form %}
-  <a href="{% url "taxi:manufacturer-list" %}" class="btn btn-secondary mt-2">
+  <a href="#" onclick="history.back(); return false;" class="btn btn-secondary mt-2">
     Cancel
   </a>
 {% endblock %}
